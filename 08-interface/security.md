@@ -1,0 +1,153 @@
+# Безопасность системы
+
+## JWT-аутентификация
+
+### Схема работы
+
+```
+Клиент (Android)                    Сервер (Spring Boot)
+|                                    |
+| POST /api/auth/login               |
+| {username, password}               |
+|----------------------------------->|
+|                                    | 1. findByUsername()
+|                                    | 2. BCrypt.matches(raw, hash)
+|                                    | 3. generateJwt(userId, role)
+|<-----------------------------------|
+| {token: "eyJ..."}                  |
+|                                    |
+| GET /api/toys                      |
+| Authorization: Bearer eyJ...       |
+|----------------------------------->|
+|                                    | 4. JwtFilter.doFilter()
+|                                    | 5. validateToken()
+|                                    | 6. extractUserId()
+|                                    | 7. setAuthentication()
+|<-----------------------------------|
+| 200 OK + данные                    |
+```
+
+### Структура JWT-токена
+
+```json
+// Header
+{
+  "alg": "HS256",
+  "typ": "JWT"
+}
+
+// Payload
+{
+  "sub": "1",           // userId
+  "username": "john",
+  "role": "USER",
+  "iat": 1715000000,    // issued at
+  "exp": 1715086400     // expires (1 hour)
+}
+```
+
+---
+
+## Spring Security конфигурация
+
+```java
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig {
+
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        return http
+            .csrf(AbstractHttpConfigurer::disable)
+            .sessionManagement(s -> s.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+            .authorizeHttpRequests(auth -> auth
+                .requestMatchers("/api/auth/**").permitAll()
+                .requestMatchers("/swagger-ui/**", "/v3/api-docs/**").permitAll()
+                .requestMatchers(HttpMethod.GET, "/api/toys/**").permitAll()
+                .requestMatchers("/api/admin/**").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.POST, "/api/toys").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.PUT, "/api/toys/**").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.DELETE, "/api/toys/**").hasRole("ADMIN")
+                .anyRequest().authenticated()
+            )
+            .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class)
+            .build();
+    }
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder(12);  // сила хеширования: 12 раундов
+    }
+}
+```
+
+---
+
+## Хранение паролей (BCrypt)
+
+- **Алгоритм:** BCrypt с cost factor = 12
+- Каждый пароль хешируется с уникальной солью
+- При аутентификации: `BCryptPasswordEncoder.matches(rawPassword, storedHash)`
+- **Исходный пароль НИКОГДА** не хранится и не передаётся по сети после регистрации
+
+---
+
+## Разграничение доступа (роли)
+
+| Роль | Возможности |
+|------|-------------|
+| **USER** | Просмотр каталога, управление своей корзиной, оформление заказов |
+| **ADMIN** | Все права USER + управление каталогом (CRUD игрушек), загрузка изображений |
+
+### Проверка владельца
+
+```java
+// Пример: корзина принадлежит только владельцу
+Optional<Cart> findByUserIdAndToyId(Long userId, Long toyId);
+// Если Optional.empty() — AccessDeniedException → HTTP 403
+```
+
+---
+
+## Хранение токена на клиенте (Android)
+
+```kotlin
+// SessionManager.kt или аналогичный класс
+class SessionManager(context: Context) {
+    private val prefs = context.getSharedPreferences(
+        "toystore_session", 
+        Context.MODE_PRIVATE
+    )
+
+    fun saveToken(token: String) = prefs.edit()
+        .putString("jwt_token", token)
+        .apply()
+    
+    fun getToken(): String? = prefs.getString("jwt_token", null)
+    
+    fun isLoggedIn(): Boolean = getToken() != null
+    
+    fun clearSession() = prefs.edit().clear().apply()
+}
+```
+
+**Рекомендация для продакшена:** использовать `EncryptedSharedPreferences` для хранения токена в зашифрованном виде.
+
+---
+
+## CORS-конфигурация
+
+```java
+@Bean
+public CorsConfigurationSource corsConfigurationSource() {
+    CorsConfiguration config = new CorsConfiguration();
+    config.setAllowedOriginPatterns(List.of("*"));
+    config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+    config.setAllowedHeaders(List.of("*"));
+    config.setAllowCredentials(true);
+    config.setMaxAge(3600L);
+
+    UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+    source.registerCorsConfiguration("/api/**", config);
+    return source;
+}

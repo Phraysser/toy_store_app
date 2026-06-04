@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1b979fb4-eed5-42ff-b211-f1cc5fe448ea" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/06-implementation/ToyStoreApp/app/src/main/java/com/toystore/app/ui/screens/CartScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/06-implementation/ToyStoreApp/app/src/main/java/com/toystore/app/ui/screens/CartScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/06-implementation/server/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/06-implementation/server/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/androidTest/java/com/toystore/app/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/ic_launcher-playstore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/ToyStoreApplication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/data/api/RetrofitInstance.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/data/api/ToyStoreApi.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/data/local/AppDatabase.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/data/local/AppPreferences.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/data/local/CachedToy.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/data/local/ToyDao.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/data/local/ToyMapper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/data/model/CartItem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/data/model/FileUploadResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/data/model/RegisterRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/data/model/Toy.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/data/repository/AuthRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/data/repository/CartRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/data/repository/ToyRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/di/ApiModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/navigation/NavGraph.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/ui/components/EmptyState.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/ui/screens/AddToyDialog.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/ui/screens/CartScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/ui/screens/LoginScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/ui/screens/RegisterScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/ui/screens/SettingsScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/ui/screens/SplashScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/ui/screens/ToyDetailScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/ui/screens/ToyListScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/ui/theme/Theme.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/ui/viewmodel/AuthViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/ui/viewmodel/CartViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/ui/viewmodel/SettingsViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/ui/viewmodel/ToyViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/utils/AuthPreferences.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/java/com/toystore/app/utils/NetworkUtils.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/values/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/main/res/xml/network_security_config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/app/src/test/java/com/toystore/app/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/gradle/gradle-daemon-jvm.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-implementation/server/src/main/java/com/toystore/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/06-implementation/server/src/main/java/com/toystore/service/CartService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/06-implementation/server" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3EgEVl3oRn00FLuz1Xvq3iHWNkv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main2&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/phray/Downloads/toystore-main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b979fb4-eed5-42ff-b211-f1cc5fe448ea" name="Changes" comment="" />
+      <created>1780591838106</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1780591838106</updated>
+      <workItem from="1780591839243" duration="8980000" />
+      <workItem from="1780604167246" duration="2880000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

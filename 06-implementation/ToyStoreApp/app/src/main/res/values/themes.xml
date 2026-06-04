@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Базовая тема для Compose - не использует Material Components 2 -->
+    <style name="Theme.ToyStoreApp" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Цвета для системных элементов (опционально) -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>
