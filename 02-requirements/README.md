@@ -11,7 +11,7 @@
 - [Таблица трассировки требований](traceability-matrix.md)
 
 ## Диаграмма вариантов использования
-![](<images/Use-case-диаграмма.png>)
+![](<images/Use-Case-диаграмма.png>)
 
 ## Модель предметной области
 ![](images/domain-model.png)
