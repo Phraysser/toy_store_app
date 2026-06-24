@@ -167,8 +167,8 @@
 | **Средняя частота** | ~8 коммитов в неделю |
 
 ### 📈 График активности
-![](statistic_images/activity_graph.jpg)
+![](statistic_images/heatmap.jpg)
 
 ### ❇️ Тепловая карта
-![](statistic_images/heatmap.jpg)
+![](statistic_images/activity_graph.jpg)
 
